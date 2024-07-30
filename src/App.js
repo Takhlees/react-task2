@@ -9,7 +9,7 @@ import Login from './Components/login';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/react-task2">
     <div className="App">
       <Switch>
       <Route exact path="/home" component={Home} />
