@@ -1,13 +1,192 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar-expand-lg {
+  background-color: #100f3d;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navbar-brand {
+  color: #ffffff;
+  margin-right: 20%;
+}
+
+.nav-link {
+  color: #ffffff;
+}
+
+.btn.btn-outline-light {
+  margin: 10px;
+}
+
+.footer {
+  background-color: #100f3d;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: rgb(178, 178, 178);
+}
+
+.link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: rgb(178, 178, 178);
+}
+
+.cards {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  margin: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  text-align: center;
+}
+
+.card-body {
+  padding: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.products h1 {
+  margin: 40px;
+}
+
+.contactform {
+  margin: 40px;
+}
+
+.contactform h3 {
+  color: #f57224;
+  margin: 10px;
+}
+
+.contactform button {
+  background-color: #f57224;
+}
+
+.login,
+.signup {
+  margin: 30px;
+}
+
+.login button {
+  background-color: #0f0d3d;
+}
+
+.signup button {
+  background-color: #0f0d3d;
+}
+
+.form {
+  margin: "40px 30%";
+}
+
+.mb-3 {
+  text-align: left;
+}
+
+.d-flex.p-2 {
+  text-align: row;
+}
+
+.cardc {
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardc div {
+  margin: 10px;
+  flex: 1;
+}
+
+.card-bodyy {
+  padding-right: 80px;
+  text-align: end;
+}
+
+.bars {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.bars span {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+@media only screen and (max-width: 700px) {
+  .bars {
+    display: flex;
+  }
+
+  .d-flex.p-2 {
+    text-align: column;
+    flex-direction: column;
+  }
+
+  .cardc {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardc div {
+    text-align: center;
+  }
+
+  .card-bodyy {
+    padding-right: 0px;
+  }
+
+  .footer .row {
+    flex-direction: column;
+  }
+
+  .footer .col {
+    margin: 20px;
+    text-align: center;
+  }
+
+  .form {
+    margin: "40px 10px";
+  }
 }
